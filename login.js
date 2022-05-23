@@ -14,7 +14,7 @@ function login () {
     let userValid = {
         user: '',
         email: '',
-        paswword: ''    
+        password: ''    
     }
 
     userList = JSON.parse(localStorage.getItem('userList'))
@@ -26,6 +26,9 @@ function login () {
                 email : item.email,
                 password: item.password
             }
+            msgErrorLogin.setAttribute('style', 'display: none')
+            labelUserEmail.setAttribute('style', 'color: black')
+            labelUserPassword.setAttribute('style', 'color: black')
             window.location.href = '/home-screen.html' 
             let token = Math.random().toString(16).substring(2) + Math.random().toString(16).substring(2)
             localStorage.setItem('token', token)

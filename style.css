@@ -85,7 +85,7 @@ h1 {
     font-size: 16px;
 }
 
-#email, #name, #password {
+#email, #name, #password, #confirm-password {
     margin-top: 5px;
     margin-bottom: 15px;
     padding: 12px 20px;
@@ -104,11 +104,11 @@ h1 {
     border: solid rgb(236, 236, 236);
 }
 
-input#name:hover, input#email:hover, input#password:hover {
+input#name:hover, input#email:hover, input#password:hover, input#confirm-password:hover {
     border: solid rgb(218, 216, 216);
 }
 
-input#name:focus, input#email:focus, input#password:focus {
+input#name:focus, input#email:focus, input#password:focus, input#confirm-password:hover {
     outline-color: rgb(68, 124, 209);
 }
 
