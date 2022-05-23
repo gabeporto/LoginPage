@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/pds-logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Register | EvolutionMoment</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card-register">
+            <div class="card-image-area">
+                <img src="images/new-user.svg" alt="" srcset="">
+            </div>
+            <div class="card-login">
+                <div class="first-section">
+                    <label class="new-account">Already have an account?</label>
+                    <button class="btn-signup" onclick="window.location.href='/login.html'">Log in</button>
+                </div>
+
+                <div id="msgError"></div>
+                <div id="msgSucess"></div>
+
+                <h1 class="title">Create Account</h1>
+
+                <div class="label-input">
+                    <label class="user-name">User name</label>
+                    <input type="name" name="name" id="name" placeholder="ex: PD Soluções">
+                </div>
+
+                <div class="label-input">
+                    <label class="user-email">Email</label>
+                    <input type="email" name="" id="email" placeholder="example@pdsolucoes.com.br">
+                </div>
+
+                <div class="label-input">
+                    <label class="user-password">Password</label>
+                    <input type="password" name="" id="password" placeholder="●●●●●●●●●●●">
+                </div>
+
+                <div class="label-input">
+                    <label class="user-confirm-password">Confirm Password</label>
+                    <input type="password" name="" id="confirm-password" placeholder="●●●●●●●●●●●">
+                </div>
+
+                <div class="confirm-input">
+                    <div class="log-in-area">
+                        <button class="btn-login" onclick="createAccount()">Create</button>
+                    </div>
+
+                    <div class="remember-me">
+                        <input type="checkbox" class="remember"></input>
+                        <label>Remember me</label>  
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>

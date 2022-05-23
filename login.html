@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/pds-logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Login | EvolutionMoment</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-image-area">
+                <img src="images/dev-user.svg" alt="" srcset="">
+            </div>
+            <div class="card-login">
+                <div class="first-section">
+                    <label class="new-account">Don't have an account?</label>
+                    <button class="btn-signup" onclick="window.location.href='/register.html'">Sign up</button>
+                </div>
+
+                <div id="msgError"></div>
+
+                <h1>Login</h1>
+
+                <div class="label-input">
+                    <label class="user-email">Email</label>
+                    <input type="email" name="" id="email" placeholder="example@pdsolucoes.com.br">
+                </div>
+
+                <div class="label-input">
+                    <label class="user-password">Password</label>
+                    <input type="password" name="" id="password" placeholder="●●●●●●●●●●●">
+                </div>
+
+                <div class="forgot-password">Forgot password?</div>
+
+                <div class="confirm-input">
+                    <div class="log-in-area">
+                        <button class="btn-login" onclick="login()">Log in</button>
+                    </div>
+
+                    <div class="remember-me">
+                        <input type="checkbox" class="remember"></input>
+                        <label>Remember me</label>  
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
